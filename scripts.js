@@ -6,8 +6,7 @@ $(document).ready(function () {
     for (var i = 1; i <= 100; i++) {
         var $h3 = $("<h3>Accusation " + i + "</h3>");
         $($h3).appendTo("main");
-        var accusation = getAlert(i);
-        $($h3).click(accusation);
+        $($h3).click(getAlert(i));
     }
 
     function getAlert(i) {
